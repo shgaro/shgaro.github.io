@@ -313,6 +313,38 @@ header .navbar li a{
 }
 
 }
+
+@media (max-width:991px) {
+	.client_img_block {
+		float: inherit;
+		border-style: solid;
+		border-width: 7px;
+		border-color: rgb( 255, 255, 255 );
+		border-radius: 50%;
+		background-color: rgb( 17, 17, 17 );
+		width: 225px;
+		height: 225px;
+		margin: 25px auto;
+	}
+	.right:after {
+		content: '';
+		position: absolute;
+		left: 46%;
+		top: -60px;
+		border: 30px solid #9c292900;
+		border-bottom: 30px solid white;
+	}
+	.left:after {
+		content: '';
+		position: absolute;
+		left: 46%;
+		top: -60px;
+		border: 30px solid #9c292900;
+		border-bottom: 30px solid white;
+		right: auto;
+	}
+}
+
 @media (max-width:640px) {
 
 }
