@@ -12,11 +12,9 @@ jQuery(document).ready(function($){
 	var $lateral_menu_trigger = $('#cd-menu-trigger'),
 		$content_wrapper = $('.cd-main-content'),
 		$navigation = $('header');
-
-	//open-close lateral menu clicking on the menu icon
 	$lateral_menu_trigger.on('click', function(event){
 		event.preventDefault();
-		
+
 		$lateral_menu_trigger.toggleClass('is-clicked');
 		$navigation.toggleClass('lateral-menu-is-open');
 		$content_wrapper.toggleClass('lateral-menu-is-open').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
@@ -24,7 +22,7 @@ jQuery(document).ready(function($){
 			$('body').toggleClass('overflow-hidden');
 		});
 		$('#cd-lateral-nav').toggleClass('lateral-menu-is-open');
-		
+
 		//check if transitions are not supported - i.e. in IE9
 		if($('html').hasClass('no-csstransitions')) {
 			$('body').toggleClass('overflow-hidden');
@@ -55,21 +53,16 @@ jQuery(document).ready(function($){
 /*	Go TO TOP
 /*-----------------------------------------------------------------------------------*/
 var offset = 300,
-	//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
 	offset_opacity = 1200,
-	//duration of the top scrolling animation (in ms)
 	scroll_top_duration = 700,
-	//grab the "back to top" link
 	$back_to_top = $('.cd-top');
 
-//hide or show the "back to top" link
 $(window).scroll(function(){
 	( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
 	if( $(this).scrollTop() > offset_opacity ) { 
 		$back_to_top.addClass('cd-fade-out');
 	}
 });
-//smooth scroll to top
 $back_to_top.on('click', function(event){
 	event.preventDefault();
 	$('body,html').animate({
@@ -77,94 +70,3 @@ $back_to_top.on('click', function(event){
 	 	}, scroll_top_duration
 );
 });
-
-/*-----------------------------------------------------------------------------------*/
-/* 		Active Menu Item on Page Scroll
-/*-----------------------------------------------------------------------------------*/
-$(window).scroll(function(event) {
-		Scroll();
-});	
-$('.scroll a').click(function() {  
-	$('html, body').animate({scrollTop: $(this.hash).offset().top -0}, 800);
-		return false;
-});
-// User define function
-function Scroll() {
-var contentTop      =   [];
-var contentBottom   =   [];
-var winTop      =   $(window).scrollTop();
-var rangeTop    =   5;
-var rangeBottom =   1000;
-// $('nav').find('.scroll a').each(function(){
-// 	contentTop.push( $( $(this).attr('href') ).offset().top);
-// 		contentBottom.push( $( $(this).attr('href') ).offset().top + $( $(this).attr('href') ).height() );
-// })
-$.each( contentTop, function(i){
-if ( winTop > contentTop[i] - rangeTop ){
-	$('nav li.scroll')
-	  .removeClass('active')
-		.eq(i).addClass('active');			
-}}  
-)};
-
-
-//Togle Menu on click in Header
-$(".menu-shows").on('click', function(){
-	$(".menu-shows, .menu-shows-inner, .menu").toggleClass("active");
-});
-//Togle Menu on click in Header
-$('#toggle').on('click', function() {
-    $(this).toggleClass('toggle-active');
-    $('#overlay').toggleClass('nav-active');
-});
-
-
-/*-----------------------------------------------------------------------------------*/
-/*    CONTACT FORM
-/*-----------------------------------------------------------------------------------*/
-// function checkmail(input){
-//   var pattern1=/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-//   	if(pattern1.test(input)){ return true; }else{ return false; }}
-//     function proceed(){
-//     	var name = document.getElementById("name");
-// 		var email = document.getElementById("email");
-// 		var company = document.getElementById("company");
-// 		var web = document.getElementById("website");
-// 		var msg = document.getElementById("message");
-// 		var errors = "";
-// 		if(name.value == ""){
-// 		name.className = 'error';
-// 	  	  return false;}
-// 		  else if(email.value == ""){
-// 		  email.className = 'error';
-// 		  return false;}
-// 		    else if(checkmail(email.value)==false){
-// 		        alert('Please provide a valid email address.');
-// 		        return false;}
-// 		    else if(company.value == ""){
-// 		        company.className = 'error';
-// 		        return false;}
-// 		   else if(web.value == ""){
-// 		        web.className = 'error';
-// 		        return false;}
-// 		   else if(msg.value == ""){
-// 		        msg.className = 'error';
-// 		        return false;}
-// 		   else
-// 		  {
-// 	$.ajax({
-// 		type: "POST",
-// 		url: "php/submit.php",
-// 		data: $("#contact_form").serialize(),
-// 		success: function(msg){
-// 		//alert(msg);
-// 		if(msg){
-// 			$('#contact_form').fadeOut(1000);
-// 			$('#contact_message').fadeIn(1000);
-// 				document.getElementById("contact_message");
-// 			 return true;
-// 		}}
-// 	});
-// }};
-//
-//

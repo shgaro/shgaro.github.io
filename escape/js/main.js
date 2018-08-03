@@ -7,5 +7,5 @@ $(document).ready(function($) {
 /*		STICKY NAVIGATION
 /*-----------------------------------------------------------------------------------*/
 $(".sticky").sticky({topSpacing:0});
-
 });
+
