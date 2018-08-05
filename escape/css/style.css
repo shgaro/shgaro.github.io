@@ -678,168 +678,184 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 
 
 
-/*services*/
-
+/*service*/
 
 .services {
-    background-color: #ffffff;
+    background-image: url("../images/Layer 3.jpg");
+    background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .services h2 {
     font-size: 60px;
     font-family: "BrandonGrotesque";
-    color: rgb( 34, 34, 34 );
     line-height: 1.25;
-    text-align: left;
-}
-
-.services p  {
-    font-size: 18px;
-    font-family: "BrandonGrotesque";
-    color: rgb( 119, 119, 119 );
-    line-height: 1.333;
-    text-align: left;
-}
-
-.webdev_img {
-    background-image: url(../images/Flow-Tree-Icon.png);
-    width: 100%;
-    height: 115%;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.identity_img {
-    background-image: url(../images/Users-Icon.png);
-    width: 100%;
-    height: 115%;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.skills { position: relative}
-
-
-
-
-.skills h3 {
-    font-size: 22px;
-    font-family: "BrandonGrotesque";
-    color: rgb( 34, 34, 34 );
-    text-align: left;
-}
-
-.skills p {
-    font-size: 18px;
-    font-family: "BrandonGrotesque";
-    color: rgb( 119, 119, 119 );
-    line-height: 1;
-    text-align: left;
-}
-.skills_title {
-    position: absolute;
-    top: 0;
-    left: 20%;
-    width: 70%;
-}
-
-
-.skills_icon {
-    border-radius: 50%;
-    background-color: rgb( 34, 34, 34 );
-    width: 72px;
-    height: 71px;
-    text-align: center;
-}
-
-.skills_icon i{
     text-align: center;
     color: rgb( 255, 255, 255 );
-    font-size: 40px;
-    line-height: 71px;
+    margin-bottom: 50px;
 }
 
-/*services end*/
-
-
-/*awesome client*/
-
-.awesome_client {
-    position: relative;
-    background-color: #fafafa;
-}
-
-.awe_title h2 {
-    font-size: 60px;
-    font-family: "BrandonGrotesque";
-    color: rgb( 34, 34, 34 );
-    text-align: center;
-}
-
-.awe_title p {
-    font-size: 22px;
-    font-family: "BrandonGrotesque";
-    color: rgb( 119, 119, 119 );
-    text-align: center;
-}
-
-.client_img_block {
-    float: left;
-    width: 100%;
-    border-style: solid;
-    border-width: 7px;
-    border-color: rgb( 255, 255, 255 );
-    border-radius: 50%;
-    background-color: rgb( 17, 17, 17 );
-    /*width: 225px;*/
-    height: 120%;
-}
-
-
-.client_desc{
-    position: relative;
-    margin-top: 25px;
-    float: right;
-    background-color: #ffffff;
-    /*width: 70%;*/
-    border: solid 1px #f3f3f3;
-    padding: 25px;
-}
-
-.right:after  {
-    content: '';
-    position: absolute;
-    left: -60px;
-    top: 50px;
-    border: 30px solid #9c292900;
-    border-right: 60px solid white;
-}
-.left:after  {
-    content: '';
-    position: absolute;
-    right: -60px;
-    top: 50px;
-    border: 30px solid #9c292900;
-    border-left: 60px solid white;
-}
-
-.client_desc p {
-    font-size: 26px;
-    font-family: "BrandonGrotesque";
-    color: rgb( 119, 119, 119 );
-    line-height: 1.077;
-    text-align: center;
-}
-
-.client_desc span {
+.services h4{
     font-size: 20px;
     font-family: "BrandonGrotesque";
-    color: rgb( 118, 144, 197 );
-    line-height: 1.8;
+    color: rgb( 255, 255, 255 );
+    text-transform: uppercase;
+    line-height: 2.9;
     text-align: center;
 }
 
 
-/*awesome client end*/
+.services p  {
+    font-family: "BrandonGrotesque";
+    font-size: 14px;
+    color: rgb( 255, 204, 207 );
+    text-align: center;
+
+}
+
+.services .service {
+    border-radius: 5px;
+    background-color: rgb( 200, 83, 90 );
+    opacity: 0.8;
+    text-align: center;
+    height: 300px;
+
+}
+
+
+.services .service_title{
+    font-size: 30px;
+    font-family: "Lato";
+    color: rgb( 255, 255, 255 );
+    text-transform: uppercase;
+    line-height: 1.933;
+}
+
+
+.services .service_content {
+    font-size: 14px;
+    font-family: "Lato";
+    color: rgb( 254, 254, 254 );
+    line-height: 1.429;
+    text-align: center;
+}
+
+
+
+.services .service_icon {
+    border-radius: 50%;
+    background-color: rgb( 255, 255, 255 );
+    width: 120px;
+    height: 120px;
+    border: 3px white double;
+}
+
+.services .service_icon i  {
+    color: #df5c64;
+    font-size: 70px;
+    line-height: 100px;
+}
+
+/*service end*/
+
+
+/*about*/
+
+
+.about {
+    background-image: url("../images/Layer 6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.about h2 {
+    font-size: 60px;
+    font-family: "BrandonGrotesque";
+    line-height: 1.25;
+    text-align: center;
+    color: rgb( 255, 255, 255 );
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.about h4{
+    font-size: 20px;
+    font-family: "BrandonGrotesque";
+    color: rgb( 255, 255, 255 );
+    text-transform: uppercase;
+    line-height: 2.9;
+    text-align: center;
+}
+
+
+.about p  {
+    font-family: "BrandonGrotesque";
+    font-size: 14px;
+    color: rgb( 255, 204, 207 );
+    text-align: center;
+
+}
+
+.about .about_me {
+    text-align: center;
+    height: 600px;
+    border-radius: 5px;
+    background-color: rgb( 77, 63, 75 );
+    opacity: 0.502;
+
+}
+
+
+.about .my_photo{
+    border-radius: 50%;
+    background-color: rgb( 255, 255, 255 );
+    width: 300px;
+    height: 300px;
+
+}
+
+
+.about .about_name {
+    font-size: 25px;
+    color: rgb( 199, 182, 197 );
+    text-transform: uppercase;
+    line-height: 2.32;
+    text-align: right;
+}
+
+.about .about_text {
+    font-size: 18px;
+    color: white;
+}
+
+.about .about_text a{
+    font-size: 19px;
+    color: darkgrey;
+}
+.about .about_text a:hover{
+    color: lightgray;
+}
+
+.about .about_skill {
+    height: 600px;
+    border-radius: 5px;
+    background-color: rgb( 77, 63, 75 );
+    opacity: 0.502;
+    padding: 10px;
+}
+
+.about .about_skill h3 {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: white;
+}
+
+/*about end*/
+
