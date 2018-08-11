@@ -27,11 +27,11 @@
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav">
-                    <li class="scroll active"><a href="#hme">Home</a></li>
-                    <li class="scroll"> <a href="#about">Services </a> </li>
-                    <li class="scroll"> <a href="#token">About</a> </li>
-                    <li class="scroll"> <a href="#token">Work</a> </li>
-                    <li class="scroll"> <a href="#contact">Contact</a> </li>
+                    <li class="scroll active" id="hme"><a href="#" >Home</a></li>
+                    <li class="scroll" id="services"> <a href="#" >Services </a> </li>
+                    <li class="scroll" id="about"> <a href="#" >About</a> </li>
+                    <li class="scroll" id="work"> <a href="#" >Work</a> </li>
+                    <li class="scroll" id="contact"> <a href="#" >Contact</a> </li>
                 </ul>
             </div>
         </nav>
@@ -93,7 +93,6 @@
     </div>
 </section>
 
-
 <section class="about padding-top-150 padding-bottom-100">
     <div class="container">
         <div class="row">
@@ -101,13 +100,23 @@
                 <h2>Who I am and what I do</h2>
                 <h4> Cras commodo mattis justo nec lobortis. Nam ut tellus lobortis, ullamcorper massa sit amet</h4>
                 <p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
-
             </div>
         </div>
         <div class="row margin-top-100">
             <div class="col-12 col-lg-6">
                 <div class="about_me d-flex flex-column align-items-center justify-content-center mb-5 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="">
-                    <div class="p-2 my_photo "></div>
+                    <div class="me">
+                            <div class="effect-hera ">
+                                <div class="figcaption">
+                                    <p>
+                                        <a href="#"><i class="fa fa-facebook-square"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus-circle"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin"></i></a><br>
+                                        <a href="#" title="download CV"><i class="fa fa-fw fa-download"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                    </div>
                     <div class="p-2 about_name ">Garik Shamyan</div>
                     <div class="p-2  about_text">I'm the Front-End Developer for <a href="http://evistep.com/">Evistep Enterprise</a> in Armenia</div>
                 </div>
@@ -156,6 +165,108 @@
     </div>
 </section>
 
+<section class="project padding-top-150 padding-bottom-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>PROJECTS</h2>
+                <p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
+            </div>
+        </div>
+
+
+        <div class="row padding-top-25 padding-bottom-25" style="border-top: white 1px solid;border-bottom: white 1px solid;">
+            <div class="col-12">
+                <div class="filters">
+                    <div class="ui-group">
+                        <div class="button-group js-radio-button-group" data-filter-group="color">
+                            <button class="button is-checked" data-filter="">ALL</button>
+                            <button class="button" data-filter=".web">WEBSITE TEMPLATES</button>
+                            <button class="button" data-filter=".landing">LANDING PAGES</button>
+                            <button class="button" data-filter=".with">fffff</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid margin-top-50" >
+            <div class="color-shape web">
+                <div class="my_projects luxhotels">
+                    <a href="https://shgaro.github.io/luxhotels/">
+                        <div class="my_projects_hover">
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="color-shape landing">
+                <div class="my_projects luxhotels">
+                    <a href="https://shgaro.github.io/luxhotels/">
+                        <div class="my_projects_hover">
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="color-shape with">
+                <div class="my_projects luxhotels">
+                    <a href="https://shgaro.github.io/luxhotels/">
+                        <div class="my_projects_hover">
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="color-shape with">
+                <div class="my_projects luxhotels">
+                    <a href="https://shgaro.github.io/luxhotels/">
+                        <div class="my_projects_hover">
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="color-shape with">
+                <div class="my_projects luxhotels">
+                    <a href="https://shgaro.github.io/luxhotels/">
+                        <div class="my_projects_hover">
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="contact padding-top-150 padding-bottom-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>contact us</h2>
+                <p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-12">
+                <form action="">
+                    <input name="name" type="text" placeholder="Name" class="form_name">
+                    <input name="email" type="text" placeholder="E-mail" class="form_name">
+                    <textarea name="question" placeholder="Your question" class="form_text"></textarea>
+                    <input type="submit" value="Send" class="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 <!-- GO TO TOP -->
@@ -167,10 +278,8 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.sticky.js"></script>
 <script src="js/wow.js"></script>
+<script src="js/isotope.js"></script>
 <script src="js/main.js"></script>
-<script>
-    new WOW().init();
-</script>
 
 
 </body>
