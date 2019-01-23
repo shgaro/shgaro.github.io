@@ -1085,6 +1085,12 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 .luxhotels {
     background-image: url(../images/luxhotels.jpg);
 }
+.armeniacoin {
+    background-image: url(../images/armeniacoin.jpg);
+}
+.goodmood {
+    background-image: url(../images/goodmood.jpg);
+}
 
 .my_projects_hover {
     border-radius: 15px;
